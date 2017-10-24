@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css?family=Niconne');
+@import url(https://fonts.googleapis.com/css?family=Inconsolata:400,700);
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+@import url('../fonts/font-awesome/css/font-awesome.min.css');
+@import url('../particles-grid.css');
+
+/*html*/
+
+html {
+	background-size: 100%;
+}
+body {
+	background-color: azure;
+}
+a:visited {
+	color: blue;
+}
+a:hover {
+	color: red;
+}
+a:active {
+	color: blueviolet;
+}
+h1 {
+	color: crimson;
+	background: -webkit-linear-gradient(left, rgb(238, 130, 238), rgb(0, 0, 255));
+	/* For Safari 5.1 to 6.0 */
+}
+
+/*nav*/
+
+nav {
+	background: -webkit-linear-gradient(left, rgb(255, 255, 255), rgb(26, 148, 255));
+	/* For Safari 5.1 to 6.0 */
+	font-family: 'Pacifico', cursive;
+	font-size: 25px;
+}
+nav ul {
+	text-align: center;
+}
+nav li {
+	border: white 10px solid;
+	border-bottom-left-radius: 30px;
+	border-top-right-radius: 30px;
+	text-align: center;
+	display: block;
+	padding: 0;
+}
+nav li:hover {
+	border: 10px blue solid;
+	box-shadow: 10px 5px 10px 15px rgba(0, 0, 0, 0.45);
+}
+header {
+	background-image: url("../images/photo1.jpg");
+}
+header h2 {
+	font-size: 50px;
+	text-shadow: 2px 2px 2px white, 5px 5px 25px blue, 0 0 5px darkblue;
+	font-family: 'Niconne', cursive;
+}
+.col {
+	/*border: 10px solid white;
+    padding: 50px;
+    margin: 10px 0;
+*/
+	text-align: center;
+	border-radius: 20px;
+	border: 10px white solid;
+}
+.col:hover {
+	border: 10px blue solid;
+	box-shadow: 20px 10px 38px 50px rgba(0, 0, 0, 0.45);
+}
+.col a {
+	text-decoration: none;
+}
+.col p {
+	color: black;
+}
+.col i {
+	margin: 1px;
+}
+main button {
+	width: 100px;
+	height: 50px;
+	font-family: 'Lobster', cursive;
+	font-size: 20px;
+}
+main button:hover {
+	box-shadow: 0 32px 64px 0 rgba(0, 0, 0, 0.2), 0 64px 128px 0 rgba(0, 0, 0, 0.19);
+}
+footer p {
+	font-family: 'Niconne', cursive;
+	color: black;
+	text-align: center;
+	font-size: 40px;
+	background: -webkit-linear-gradient(left, rgb(255, 179, 255), rgb(255, 255, 255));
+	/* For Safari 5.1 to 6.0 */
+	border: white 5px solid;
+	border-bottom-right-radius: 50px;
+	border-top-left-radius: 50px;
+	text-shadow: 2px 2px 2px white, 5px 5px 25px blue, 0 0 5px darkblue;
+}
+.container {
+	display: inline;
+	text-align: center;
+}
+form {
+	font-size: 30px;
+	font-family: 'Lobster', cursive;
+}
+iframe {
+	height: 650px;
+}
+.container-photo {
+	position: relative;
+}
+.ribbon {
+	position: absolute;
+	top: -10px;
+	right: 0px;
+}
+.ribbon img {
+	width: 150px;
+}
+
+/* media query section for screens bigger than 600px wide */
+
+@media(min-width:600px) {
+	p {
+		font-size: 1.25rem;
+		text-align: center;
+	}
+	nav a:hover:after, nav a.selected:after {
+		content: "\f105";
+		float: right;
+		font-family: 'FontAwesome';
+		font-size: 40px;
+		bottom: 10px;
+	}
+	main button {
+		margin-right: 600px;
+	}
+	.ribbon img {
+		width: 200px;
+	}
+}
+
+/* media query section for screens bigger than 900px wide */
+
+@media(min-width:900px) {
+	p {
+		font-size: 1.5rem;
+		line-height: 1.5;
+		text-align: center;
+	}
+	nav a:hover:after, nav a.selected:after {
+		content: " ";
+		float: none;
+	}
+	.ribbon img {
+		width: 300px;
+	}
+	.contact-container {
+		display: flex;
+	}
+	.contact-form {
+		width: 30%;
+	}
+	.contact-address {
+		width: 20%;
+	}
+	.contact-map {
+		width: 50%;
+	}
+	nav ul {
+		display: flex;
+		list-style: none;
+		padding: 0;
+		justify-content: space-around;
+	}
+	nav li {
+		display: inline-block;
+		width: 300px;
+	}
+}

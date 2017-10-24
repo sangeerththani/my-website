@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css?family=Niconne');
+@import url('https://fonts.googleapis.com/css?family=Rye');
+html {
+	background-image: url("../images/it.png");
+}
+body h1 {
+	text-shadow: 30px 30px 30px white, 20px 20px 25px maroon, 5px 5px 5px pink;
+	font-family: 'Niconne', cursive;
+	font-size: 150px;
+	color: crimson;
+}
+a:visited {
+	color: blue;
+}
+a:hover {
+	color: red;
+}
+a:active {
+	color: blueviolet;
+}
+nav {
+	font-family: 'Rye', cursive;
+	font-size: 50px;
+	text-shadow: 5px 2px 2px white, 10px 5px 5px black;
+}
+p {
+	color: firebrick;
+}
